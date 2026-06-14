@@ -339,106 +339,106 @@ export default async function CategoryPage({ params }: Props) {
             />
           </>
         )}
+
+        {category === 'misc' && (
+          <>
+            {/* Misc Tools Long-Form Content */}
+            <section className="max-w-4xl mx-auto px-6 py-12">
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Free Everyday Utility Tools That Actually Solve Real Problems</h2>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Whether you are a blogger, developer, SEO professional, or small business owner, having access to genuinely useful, free online tools can make everyday tasks easier. Our collection of everyday calculator tools doesn't fit neatly into a single category, but each solves a real‑world problem instantly without any signup.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Why Simple Utility Tools Are the Most Used Tools on the Web</h2>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Billions of users search for simple calculators—age calculators, unit converters, date diff tools—every day. Browser‑based tools win because they load instantly, protect privacy by keeping calculations local, and require no installation. The speed and zero‑signup experience make them the go‑to solution for quick, reliable answers.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Complete Guide to Our Misc Utility Tools</h2>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Age Calculator</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Calculates your exact age in years, months, and days. Perfect for birthday milestones, legal age verification, or genealogy research. <Link href="/tools/misc/age-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">Age calculator</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Date Difference Calculator</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Find the number of days between two dates, useful for project timelines or exam countdowns. <Link href="/tools/misc/date-difference" className="text-orange-500 hover:text-orange-600 font-medium underline">Date difference tool</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Unit Converter</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Convert between metric and imperial units—length, weight, temperature, and more. <Link href="/tools/misc/unit-converter" className="text-orange-500 hover:text-orange-600 font-medium underline">Unit converter</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">BMI Calculator</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Quickly compute your Body Mass Index to gauge health status. <Link href="/tools/misc/bmi-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">BMI calculator</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Loan Payment Calculator</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Determine monthly payments for loans or mortgages using principal, rate, and term. <Link href="/tools/misc/loan-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">Loan calculator</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Currency Converter</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Convert between dozens of currencies with up‑to‑date exchange rates. <Link href="/tools/misc/currency-converter" className="text-orange-500 hover:text-orange-600 font-medium underline">Currency converter</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">IP Address Lookup</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Find geolocation information for any IP address instantly. <Link href="/tools/misc/ip-lookup" className="text-orange-500 hover:text-orange-600 font-medium underline">IP lookup tool</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Password Strength Checker</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Evaluate how strong a password is and get suggestions for improvement. <Link href="/tools/misc/password-checker" className="text-orange-500 hover:text-orange-600 font-medium underline">Password checker</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Base64 Encoder/Decoder</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Encode or decode strings to and from Base64. <Link href="/tools/misc/base64" className="text-orange-500 hover:text-orange-600 font-medium underline">Base64 tool</Link>.
+              </p>
+              <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">JSON Formatter</h3>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Beautify and validate JSON data quickly. <Link href="/tools/misc/json-formatter" className="text-orange-500 hover:text-orange-600 font-medium underline">JSON formatter</Link>.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">How to Get Maximum Value from Online Utility Tools</h2>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                Bookmark your favorite calculators, use keyboard shortcuts (Ctrl+L to focus), and keep a reference of which tool handles which calculation. Remember that date calculators can use different conventions (inclusive vs exclusive); choose the one that matches your need. For recurring needs, create a simple spreadsheet that pulls results from these tools via copy‑paste.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The Philosophy Behind Building Simple, Useful Tools</h2>
+              <p className="text-base text-slate-600 leading-relaxed mb-4">
+                At CryptoRedar we believe every tool should solve a real problem, run entirely in the browser, and never store personal data. This approach boosts trust, aligns with E‑E‑A‑T guidelines, and keeps the experience fast. Learn more about performance best practices on <a href="https://web.dev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">web performance best practices</a> and explore <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">Google developer resources</a>.
+              </p>
+
+              <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Frequently Asked Questions About Misc Tools</h2>
+              <ul className="list-disc list-inside text-slate-600 space-y-2 mb-6">
+                <li><strong>Are all these miscellaneous tools completely free?</strong> Yes, every tool on this page is free to use with no hidden fees.</li>
+                <li><strong>Do these tools work on mobile devices?</strong> They are fully responsive and work in any modern mobile browser.</li>
+                <li><strong>How accurate is the age calculator?</strong> It uses the Gregorian calendar and accounts for leap years, providing day‑level accuracy.</li>
+                <li><strong>Do these tools require any login or account?</strong> No, they run entirely in the browser with no sign‑up required.</li>
+                <li><strong>Is my data private when using these tools?</strong> All calculations happen locally; no data is sent to a server.</li>
+              </ul>
+            </section>
+
+            {/* JSON‑LD for FAQ and Breadcrumb */}
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": [
+                {"@type": "Question", "name": "Are all these miscellaneous tools completely free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, every tool on this page is free to use with no hidden fees."}},
+                {"@type": "Question", "name": "Do these tools work on mobile devices?", "acceptedAnswer": {"@type": "Answer", "text": "They are fully responsive and work in any modern mobile browser."}},
+                {"@type": "Question", "name": "How accurate is the age calculator?", "acceptedAnswer": {"@type": "Answer", "text": "It uses the Gregorian calendar and accounts for leap years, providing day‑level accuracy."}},
+                {"@type": "Question", "name": "Do these tools require any login or account?", "acceptedAnswer": {"@type": "Answer", "text": "No, they run entirely in the browser with no sign‑up required."}},
+                {"@type": "Question", "name": "Is my data private when using these tools?", "acceptedAnswer": {"@type": "Answer", "text": "All calculations happen locally; no data is sent to a server."}}
+              ]
+            })}} />
+            <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cryptoredar.com/"},
+                {"@type": "ListItem", "position": 2, "name": "Misc Tools", "item": "https://cryptoredar.com/tools/misc"}
+              ]
+            })}} />
+          </>
+        )}
       </div>
-{category === 'misc' && (
-  <>
-    {/* Misc Tools Long-Form Content */}
-    <section className="max-w-4xl mx-auto px-6 py-12">
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Free Everyday Utility Tools That Actually Solve Real Problems</h2>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Whether you are a blogger, developer, SEO professional, or small business owner, having access to genuinely useful, free online tools can make everyday tasks easier. Our collection of everyday calculator tools doesn’t fit neatly into a single category, but each solves a real‑world problem instantly without any signup.
-      </p>
-
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Why Simple Utility Tools Are the Most Used Tools on the Web</h2>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Billions of users search for simple calculators—age calculators, unit converters, date diff tools—every day. Browser‑based tools win because they load instantly, protect privacy by keeping calculations local, and require no installation. The speed and zero‑signup experience make them the go‑to solution for quick, reliable answers.
-      </p>
-
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Complete Guide to Our Misc Utility Tools</h2>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Age Calculator</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Calculates your exact age in years, months, and days. Perfect for birthday milestones, legal age verification, or genealogy research. <Link href="/tools/misc/age-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">Age calculator</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Date Difference Calculator</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Find the number of days between two dates, useful for project timelines or exam countdowns. <Link href="/tools/misc/date-difference" className="text-orange-500 hover:text-orange-600 font-medium underline">Date difference tool</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Unit Converter</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Convert between metric and imperial units—length, weight, temperature, and more. <Link href="/tools/misc/unit-converter" className="text-orange-500 hover:text-orange-600 font-medium underline">Unit converter</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">BMI Calculator</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Quickly compute your Body Mass Index to gauge health status. <Link href="/tools/misc/bmi-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">BMI calculator</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Loan Payment Calculator</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Determine monthly payments for loans or mortgages using principal, rate, and term. <Link href="/tools/misc/loan-calculator" className="text-orange-500 hover:text-orange-600 font-medium underline">Loan calculator</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Currency Converter</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Convert between dozens of currencies with up‑to‑date exchange rates. <Link href="/tools/misc/currency-converter" className="text-orange-500 hover:text-orange-600 font-medium underline">Currency converter</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">IP Address Lookup</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Find geolocation information for any IP address instantly. <Link href="/tools/misc/ip-lookup" className="text-orange-500 hover:text-orange-600 font-medium underline">IP lookup tool</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Password Strength Checker</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Evaluate how strong a password is and get suggestions for improvement. <Link href="/tools/misc/password-checker" className="text-orange-500 hover:text-orange-600 font-medium underline">Password checker</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">Base64 Encoder/Decoder</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Encode or decode strings to and from Base64. <Link href="/tools/misc/base64" className="text-orange-500 hover:text-orange-600 font-medium underline">Base64 tool</Link>.
-      </p>
-      <h3 className="text-xl font-semibold text-slate-800 mt-8 mb-3">JSON Formatter</h3>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Beautify and validate JSON data quickly. <Link href="/tools/misc/json-formatter" className="text-orange-500 hover:text-orange-600 font-medium underline">JSON formatter</Link>.
-      </p>
-
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">How to Get Maximum Value from Online Utility Tools</h2>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        Bookmark your favorite calculators, use keyboard shortcuts (Ctrl+L to focus), and keep a reference of which tool handles which calculation. Remember that date calculators can use different conventions (inclusive vs exclusive); choose the one that matches your need. For recurring needs, create a simple spreadsheet that pulls results from these tools via copy‑paste.
-      </p>
-
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">The Philosophy Behind Building Simple, Useful Tools</h2>
-      <p className="text-base text-slate-600 leading-relaxed mb-4">
-        At CryptoRedar we believe every tool should solve a real problem, run entirely in the browser, and never store personal data. This approach boosts trust, aligns with E‑E‑A‑T guidelines, and keeps the experience fast. Learn more about performance best practices on <a href="https://web.dev" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">web performance best practices</a> and explore <a href="https://developers.google.com" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 underline">Google developer resources</a>.
-      </p>
-
-      <h2 className="text-2xl font-bold text-slate-900 mt-12 mb-4">Frequently Asked Questions About Misc Tools</h2>
-      <ul className="list-disc list-inside text-slate-600 space-y-2 mb-6">
-        <li><strong>Are all these miscellaneous tools completely free?</strong> Yes, every tool on this page is free to use with no hidden fees.</li>
-        <li><strong>Do these tools work on mobile devices?</strong> They are fully responsive and work in any modern mobile browser.</li>
-        <li><strong>How accurate is the age calculator?</strong> It uses the Gregorian calendar and accounts for leap years, providing day‑level accuracy.</li>
-        <li><strong>Do these tools require any login or account?</strong> No, they run entirely in the browser with no sign‑up required.</li>
-        <li><strong>Is my data private when using these tools?</strong> All calculations happen locally; no data is sent to a server.</li>
-      </ul>
-    </section>
-
-    {/* JSON‑LD for FAQ and Breadcrumb */}
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "Are all these miscellaneous tools completely free?", "acceptedAnswer": {"@type": "Answer", "text": "Yes, every tool on this page is free to use with no hidden fees."}},
-        {"@type": "Question", "name": "Do these tools work on mobile devices?", "acceptedAnswer": {"@type": "Answer", "text": "They are fully responsive and work in any modern mobile browser."}},
-        {"@type": "Question", "name": "How accurate is the age calculator?", "acceptedAnswer": {"@type": "Answer", "text": "It uses the Gregorian calendar and accounts for leap years, providing day‑level accuracy."}},
-        {"@type": "Question", "name": "Do these tools require any login or account?", "acceptedAnswer": {"@type": "Answer", "text": "No, they run entirely in the browser with no sign‑up required."}},
-        {"@type": "Question", "name": "Is my data private when using these tools?", "acceptedAnswer": {"@type": "Answer", "text": "All calculations happen locally; no data is sent to a server."}}
-      ]
-    })}} />
-    <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://cryptoredar.com/"},
-        {"@type": "ListItem", "position": 2, "name": "Misc Tools", "item": "https://cryptoredar.com/tools/misc"}
-      ]
-    })}} />
-  </>
-)}
-</div>
     </main>
   );
 }
