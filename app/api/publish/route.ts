@@ -4,6 +4,7 @@ import { upsertWebhookPost } from '@/lib/blog-store';
 import type { WebhookBlogPost } from '@/lib/blog-types';
 import { checkRateLimit, validatePublishPayload, verifyApiKey } from '@/lib/publish-security';
 import { canonicalUrl } from '@/lib/seo';
+import { pingIndexNow } from '@/lib/indexnow';
 
 function getClientKey(request: Request) {
   return (
@@ -78,6 +79,10 @@ export async function POST(request: Request) {
     revalidatePath(`/blog/${post.slug}`);
     revalidatePath('/sitemap.xml');
     revalidatePath('/feed.xml');
+
+    // Fire-and-forget IndexNow ping — never block the publish response.
+    const postUrl = post.canonicalUrl ?? canonicalUrl(`/blog/${post.slug}`);
+    void pingIndexNow([postUrl]);
   }
 
   return NextResponse.json({

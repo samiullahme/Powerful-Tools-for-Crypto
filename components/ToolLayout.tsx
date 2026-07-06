@@ -3,6 +3,7 @@ import { Tool, getCategoryColor } from '@/lib/tools-registry';
 import Breadcrumb from './Breadcrumb';
 import FAQSection from './FAQSection';
 import RelatedTools from './RelatedTools';
+import AdSlot from './AdSlot';
 import { canonicalUrl } from '@/lib/seo';
 import { shell, toolSurfaceCard, sidebarCard } from '@/lib/ui-classes';
 
@@ -56,6 +57,9 @@ export default function ToolLayout({ tool, children }: ToolLayoutProps) {
           { label: tool.categoryLabel, href: `/tools/${tool.category}` },
           { label: tool.name },
         ]} />
+
+        {/* Header ad slot — below site header, above tool title (tool pages only) */}
+        <AdSlot position="header" />
 
         {/* Page title */}
         <div className="mb-9 mt-3 max-w-3xl">
@@ -136,6 +140,11 @@ export default function ToolLayout({ tool, children }: ToolLayoutProps) {
           {/* ── SIDEBAR ── */}
           <aside className="flex flex-col gap-5 lg:sticky lg:top-24">
             <RelatedTools tool={tool} />
+
+            {/* Sidebar ad slot — desktop only, tool pages */}
+            <div className="hidden lg:block">
+              <AdSlot position="sidebar" />
+            </div>
 
             {/* Tool Info */}
             <div className={sidebarCard}>
