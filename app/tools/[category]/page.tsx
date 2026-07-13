@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import Head from 'next/head';
 import { notFound } from 'next/navigation';
 import ToolCard from '@/components/ToolCard';
+import AdSlot from '@/components/AdSlot';
 import CryptoCategoryContent from '@/components/CryptoCategoryContent';
 import FinanceCategoryContent from '@/components/FinanceCategoryContent';
 import DevCategoryContent from '@/components/DevCategoryContent';
@@ -225,6 +226,11 @@ export default async function CategoryPage({ params }: Props) {
             </div>
           )}
         </div>
+      </div>
+
+      {/* Header banner ad */}
+      <div className={`${shell} pt-6`}>
+        <AdSlot position="header" />
       </div>
 
       {/* Tools Grid */}

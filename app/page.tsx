@@ -6,6 +6,7 @@ import { POPULAR_FINANCE_SLUGS } from '@/components/finance-icons';
 import { categories, toolsRegistry } from '@/lib/tools-registry';
 import { absoluteTitle, canonicalUrl } from '@/lib/seo';
 import { IconArrowRight, IconBolt, IconCheckCircle, IconShield, IconPhone, IconTag } from '@/components/icons';
+import AdSlot from '@/components/AdSlot';
 import {
   ctaShell,
   dotPattern,
@@ -98,6 +99,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── HEADER BANNER AD ── */}
+      <div className="w-full px-4 md:px-6 max-w-6xl mx-auto">
+        <AdSlot position="header" />
+      </div>
 
       {/* ── TOOL CATEGORIES ── */}
       <section className="py-20 relative z-10">
@@ -192,6 +198,11 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ── MULTIPLEX AD ── */}
+      <div className="w-full px-4 md:px-6 max-w-6xl mx-auto py-8">
+        <AdSlot position="multiplex" />
+      </div>
 
       {/* ── WHY CRYPTOREDAR ── */}
       <section className="py-20 relative z-10">

@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
 import ContentPageLayout from '@/components/ContentPageLayout';
+import AdSlot from '@/components/AdSlot';
 import { getAllPublishedPosts } from '@/lib/blog-data';
 import { withCanonical } from '@/lib/seo';
 import { glassCardStatic, shell } from '@/lib/ui-classes';
@@ -36,6 +37,11 @@ export default async function BlogPage() {
       </ContentPageLayout>
 
       <div className={`${shell} pb-20 -mt-10`}>
+        {/* Multiplex ad — above blog posts */}
+        <div className="w-full mb-10">
+          <AdSlot position="multiplex" />
+        </div>
+
         <div className="max-w-5xl mx-auto grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {posts.map((post) => (
             <Link

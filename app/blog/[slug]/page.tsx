@@ -3,6 +3,7 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import ContentPageLayout from '@/components/ContentPageLayout';
+import AdSlot from '@/components/AdSlot';
 import BlogPostContent from '@/components/BlogPostContent';
 import { getAllPostSlugs, getBlogPostBySlug } from '@/lib/blog-data';
 import { siteConfig } from '@/lib/site-config';
@@ -232,6 +233,7 @@ export default async function BlogPostPage({ params }: Props) {
       <p className="text-sm text-slate-400 mb-6 not-prose">
         By {post.author} · {post.readTime}
       </p>
+      <AdSlot position="header" />
       {body}
       {post.content && <BlogPostContent html={post.content} />}
       {post.faq && post.faq.length > 0 && (

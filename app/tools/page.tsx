@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import ToolCard from '@/components/ToolCard';
+import AdSlot from '@/components/AdSlot';
 import { toolsRegistry, categories } from '@/lib/tools-registry';
 import Link from 'next/link';
 import { absoluteTitle, canonicalUrl } from '@/lib/seo';
@@ -34,6 +35,11 @@ export default function AllToolsPage() {
           <p className="text-[15px] text-slate-500 leading-7 max-w-[600px]">
             {toolsRegistry.length} free tools across {categories.length} categories. No signup. No downloads. Use right in your browser.
           </p>
+        </div>
+
+        {/* Header banner ad */}
+        <div className="w-full">
+          <AdSlot position="header" />
         </div>
 
         {/* Category filter pills */}
